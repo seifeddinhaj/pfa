@@ -1,0 +1,66 @@
+<body id="page-top">
+  <app-header></app-header>
+   
+  
+    <div id="wrapper">
+  
+      <!-- Sidebar -->
+      <app-side-bar></app-side-bar>
+  
+      
+      <!-- /.content-wrapper -->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="well well-sm">
+                
+                <fieldset>
+                  <legend class="text-center">Ajouter Parking</legend>
+          
+                  <!-- Name input-->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Numéro Parking</label>
+                    <div class="col-md-9">
+                      <input id="name" name="Nump" type="text" placeholder="Num..." class="form-control" [(ngModel)]="Nump">
+                    </div>
+                  </div>
+          
+                  <!-- Email input-->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="numr">Numéro du Rayon</label>
+                    <div class="col-md-9">
+                      <input id="email" name="Numr" type="text" placeholder="..." class="form-control" [(ngModel)]="Numr">
+                    </div>
+                  </div>
+          
+                  <!-- Message body -->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="message">Your message</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                    </div>
+                  </div>
+          
+                  <!-- Form actions -->
+                  <div class="form-group">
+                    <div class="col-md-12 text-right">
+                      <button type="submit" class="btn btn-primary btn-lg" (click)="addParking(Nump,Numr)">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+               
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#wrapper -->
+  
+    <!-- Scroll to Top Button-->
+    
+    <!-- Logout Modal-->
+    
+    
+  
+  </body>
+  
